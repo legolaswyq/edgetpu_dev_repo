@@ -1,0 +1,1 @@
+docker run -it --gpus 'device=0' -p 8887:8887 --privileged -v /dev/bus/usb:/dev/bus/usb -v "$(pwd)":/app -v /home/walter/big_daddy/20240313_od_data_sample_from_imagr_instore_755/bayer:/bayer -w /app walterwangimagr/tf_multigpus_edgetpu jupyter lab --port 8887
